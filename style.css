@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #2F1893;
+    font-family: 'DM Sans', sans-serif;
+    color: #fff;
+}
+
+.container
+{
+    width: 972px;
+    height: 890px;
+    margin: 0 auto;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 972px;
+    margin-bottom: 50px;
+    /* margin-top: 20px; */
+    padding: 1rem 0;
+}
+
+nav
+{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.purchase
+{
+    width: 120px;
+    height: 40px;
+    background-color: #E93A7D;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    align-self: center;
+}
+
+li
+{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    margin-right: 20px;
+}
+
+.nav-menu
+{
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link
+{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 26px;
+} 
+
+.nav-link:hover
+{
+    color: #adadad;
+}
+
+
+.hero
+{
+    display: flex;
+}
+
+.heading
+{
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -1px;
+    text-align: left;
+
+    width: 424px;
+    height: 217px;
+    margin-bottom: 20px;
+}
+
+.lead
+{
+    width: 363px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.hero-button
+{
+    width: 157px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: #E93A7D;
+    color: #fff;
+}
+
+form
+{
+    background-color: #fff;
+    color: #15143966;
+    width: 470px;
+    height: 600px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    border: 2px solid #EBEAED;
+}
+
+.hero-form h3
+{
+    color: #1E0E62;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: -0.4px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.hero-form input[type=email], 
+.hero-form input[type=password]
+{
+    width: 330px;
+    height: 50px;
+    margin: 8px auto;
+    border-radius: 100px;
+    border: 2px solid #EBEAED;
+    padding: 0 10px;
+}
+
+.tos
+{
+    margin: 5px auto;
+}
+
+.sign-in,
+.twitterBtn
+{
+    width: 330px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.sign-in
+{
+    background-color: #482BE7;
+}
+
+.twitterBtn
+{
+    background-color: #1DA1F2;
+}
+
+.divider
+{
+    width: 328px;
+    height: 2px;
+    text-align: center;
+    border-bottom: 2px solid #EBEAED;
+    line-height: 0.1em;
+    margin: 20px auto;
+}
+
+.divider span
+{
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+.sign-in-text
+{
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.sign-in-text a
+{
+    color: #25DAC5;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px)
+{
+    header
+    {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #2F1893;
+    }
+
+    .logo
+    {
+        margin-left: 20px;
+    }
+
+    .nav-menu
+    {
+        position: fixed;
+        left: -100%;
+        top: 4.2rem;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #2F1893;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav.item{
+        margin: 2.5rem 0;
+    }
+
+    .hamburger
+    {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .container
+    {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .hero
+    {
+        margin-top: 80px;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content
+    {
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .heading 
+    {
+        text-align: center;
+    }
+
+    h5.lead
+    {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .hero-button
+    {
+        margin: 0 auto;
+    }
+
+    form
+    {
+        width: 350px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        border: 2px solid #EBEAED;
+        margin-left: 0;
+        margin: 0 auto;
+        
+    }
+
+    .hero-form input[type=email], 
+    .hero-form input[type=password]
+    {
+        width: 280px;
+        height: 50px;
+        margin: 8px auto;
+        border-radius: 100px;
+        border: 2px solid #EBEAED;
+        padding: 0 10px;
+    }
+
+    .sign-in,
+    .twitterBtn
+    {
+        width: 280px;
+        height: 50px;
+        border-radius: 100px;
+        border: none;
+        color: #fff;
+        margin: 0 auto;
+    }
+}
+
+/* form
+{
+    background-color: #fff;
+    color: #15143966;
+    width: 470px;
+    height: 600px;
+    border: 2px solid #EBEAED;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hero-form h3
+{
+    color: #1E0E62;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: -0.4px;
+    text-align: center;
+}
+
+.hero-form input[type=email], 
+.hero-form input[type=password]
+{
+    width: 330px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 100px;
+    border: 2px solid #EBEAED;
+    padding: 0 10px;
+}
+
+label
+{
+    width: 265px;
+    height: 26.4px;
+}
+
+.sign-in,
+.twitterBtn
+{
+    width: 330px;
+    height: 50px;
+    border-radius: 100px;
+    margin: 0 auto;
+    border: none;
+    color: #fff;
+}
+
+.sign-in
+{
+    background-color: #482BE7;
+}
+
+.twitterBtn
+{
+    background-color: #1DA1F2;
+} */
