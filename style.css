@@ -435,6 +435,7 @@ header
     align-items: center;
     margin-bottom: 50px;
     padding: 1rem 0;
+    max-width: 972px;
 }
 
 nav
