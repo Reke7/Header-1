@@ -176,11 +176,23 @@ input[type="password"]
 
 .tos
 {
-    margin: 1.2em 0;
+    margin: 1.2em auto;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     color: #15143966;
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"]
+{
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    color: #101010;
+    accent-color: #25DAC5;
+    margin-right: 0.8em;
 }
 
 .divider
