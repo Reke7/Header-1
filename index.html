@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
+    <header class="header">
+        <div class="container row">
             <h3 class="logo">Startup 3</h3>
             <nav class="navbar">
                 <ul class="nav-menu">
@@ -22,47 +22,39 @@
                     <li class="nav-item"><a href="#" class="nav-link">Prices</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Feedback</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link purchaseBtn">Purchase</a></li>
                 </ul>
-                <button class="purchase">Purchase</button>
-
                 <div class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
             </nav>
-        </header>
-    
-        <section class="hero">
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container row col">
             <div class="hero-content">
                 <h2 class="heading">Generate Awesome Web Pages</h2>
-    
                 <h5 class="lead">The most important part of the Startup is the samples. The samples form a set of 25 usable pages you can use as is or you can add new blocks.</h5>
-    
                 <button class="hero-button">Learn More</button>
             </div>
-    
             <form class="hero-form">
-                <h3>Sign Up Now</h3>
+                <h3 class="hero-form--heading">Sign Up Now</h3>
                 <input type="email" placeholder="Your email">
                 <input type="password" placeholder="Your password">
-
                 <div class="tos">
                     <input type="checkbox" name="tos" id="tos">
                     <label for="tos">I agree to the Terms of Service</label>
                 </div>
-
                 <button class="sign-in">Sign in</button>
-
                 <p class="divider"><span>or</span></p>
-
                 <button class="twitterBtn">Login via Twitter</button>
-
-                <p class="sign-in-text">Do you have an Account? <a href="#">Sign in</a></p>
+                <p class="sign-in-text">Do you have an Account? <a href="#" style="color: #25DAC5;">Sign in</a></p>
             </form>
-        </section>
-    </div>
-
+        </div>
+    </section>
     <script>
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".nav-menu");
