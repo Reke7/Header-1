@@ -245,6 +245,7 @@ input[type="checkbox"]
     .logo
     {
         margin-right: auto;
+        width: 200px;
     }
     header{
         position: fixed;
